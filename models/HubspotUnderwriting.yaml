@@ -1,0 +1,109 @@
+title: HubspotUnderwriting
+x-stoplight:
+  id: dw7lwla55llfq
+type: object
+description: Fields to be written from Flex to the Hubspot Underwriting Entity
+properties:
+  id:
+    type: string
+    x-stoplight:
+      id: wng4fk9ju9b2t
+  bankingApplicationStatus:
+    type: string
+    x-stoplight:
+      id: m9igl3oag9zsg
+    enum:
+      - unused
+      - incomplete
+      - pending
+      - approved
+      - denied
+  creditApplicationStatus:
+    type: string
+    x-stoplight:
+      id: 29t59to74mggd
+    enum:
+      - unused
+      - incomplete
+      - pending
+      - approved
+      - denied
+  userType:
+    type: string
+    x-stoplight:
+      id: bn0y5zxhp2j7j
+    enum:
+      - employee
+      - owner
+      - accountant
+      - auditor
+      - admin
+  flexUserId:
+    type: string
+    x-stoplight:
+      id: x5spy9e87gp4b
+    format: uuid
+  flexCompanyId:
+    type: string
+    x-stoplight:
+      id: qdbaf9xq6dgs5
+    format: uuid
+  bankingApplicant:
+    type: string
+    x-stoplight:
+      id: q0no8ht6wcmgr
+    enum:
+      - 'yes'
+      - 'no'
+  creditApplicant:
+    type: string
+    x-stoplight:
+      id: i9lpntwxcgwy1
+    enum:
+      - 'yes'
+      - 'no'
+  ficoBand:
+    type: string
+    x-stoplight:
+      id: ptjgslx9f3xlz
+    enum:
+      - NOT_PROCESSED_YET
+      - super_prime
+      - prime
+      - near_prime
+      - subprime
+  ficoStatus:
+    type: string
+    x-stoplight:
+      id: i9ri971z4sgp4
+    enum:
+      - frozen
+      - unfrozen
+  kycPassed:
+    type: boolean
+    x-stoplight:
+      id: mfvz8fdyea2nt
+  kycPassedDate:
+    type: string
+    x-stoplight:
+      id: po094rv90nrxe
+    format: date-time
+  creditLimit:
+    type: number
+    x-stoplight:
+      id: 6nsh2af8t85m7
+  lithicId:
+    type: string
+    x-stoplight:
+      id: ja7m0avg7zdh1
+    format: uuid
+  unitId:
+    type: string
+    x-stoplight:
+      id: a524pz8dqjdjk
+    format: uuid
+  creditLineApproved:
+    type: string
+    x-stoplight:
+      id: weqkb4lfa724s
+    format: date-time

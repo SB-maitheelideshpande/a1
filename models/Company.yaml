@@ -1,0 +1,178 @@
+title: Company
+x-stoplight:
+  id: r6ulhsck60e66
+type: object
+description: 'Fields as they exist in the Api database, companies and companies_audit tables'
+properties:
+  id:
+    type: string
+    x-stoplight:
+      id: cgqt8zrb4x0pm
+    format: uuid
+  activated:
+    type: boolean
+    x-stoplight:
+      id: 1znhkt38g21vq
+  additionalInfo:
+    type: object
+    x-stoplight:
+      id: ghoop628633zt
+  address:
+    type: string
+    x-stoplight:
+      id: a76b7l6bbrod3
+  addressLine2:
+    type: string
+    x-stoplight:
+      id: y9iobl4komogz
+  allowEvenK:
+    type: boolean
+    x-stoplight:
+      id: cn4ueww1yupkr
+  aprPct:
+    type: string
+    x-stoplight:
+      id: pjxc87uh99r9t
+  asOf:
+    type: string
+    x-stoplight:
+      id: 77agpbu55tav9
+    format: date-time
+  autopay:
+    type: object
+    x-stoplight:
+      id: ot8l6m4bt9hq3
+  bankAccts:
+    type: object
+    x-stoplight:
+      id: mi6h3ewmjup18
+  byUser:
+    type: string
+    x-stoplight:
+      id: 2xcu9pdc9t8gi
+    format: uuid
+  cashback:
+    type: object
+    x-stoplight:
+      id: 2r3fue1xw8mgv
+  city:
+    type: string
+    x-stoplight:
+      id: wxh2d19yncrco
+  companyName:
+    type: string
+    x-stoplight:
+      id: mmayuqwmkygfd
+  controlPerson:
+    type: string
+    x-stoplight:
+      id: kji5vadkl8lcl
+    format: uuid
+  country:
+    type: string
+    x-stoplight:
+      id: ye1rwaf2ab5lp
+  createdAt:
+    type: string
+    x-stoplight:
+      id: ggslmhkudlq0r
+    format: date-time
+  createdBy:
+    type: string
+    x-stoplight:
+      id: xyrxm0jlp2wwa
+    format: uuid
+  creditFee:
+    type: string
+    x-stoplight:
+      id: 9pv88u3pokd8z
+  creditLimit:
+    type: string
+    x-stoplight:
+      id: vsqihciqxmwpf
+  dba:
+    type: string
+    x-stoplight:
+      id: a31jdxquqni1w
+  earlypay:
+    type: object
+    x-stoplight:
+      id: 4mqsphholx05y
+  estDate:
+    type: string
+    x-stoplight:
+      id: 6jnecn0r2rrr5
+    format: date-time
+  frozen:
+    type: boolean
+    x-stoplight:
+      id: 6esdozf7oqr95
+  incState:
+    type: string
+    x-stoplight:
+      id: csukxhp1c3nav
+  kybPassed:
+    type: string
+    x-stoplight:
+      id: kaftbfqqrc0en
+    format: date-time
+  logoDocId:
+    type: string
+    x-stoplight:
+      id: ee7gf7e7qcs65
+  maxDailyPays:
+    type: number
+    x-stoplight:
+      id: 309ydcf5mqco5
+  officerInfo:
+    type: object
+    x-stoplight:
+      id: frcuu111p96m3
+  onboardedBy:
+    type: string
+    x-stoplight:
+      id: mlauv7ate6bjz
+  operState:
+    type: string
+    x-stoplight:
+      id: vo4uu07u2ll7t
+  optedProducts:
+    type: object
+    x-stoplight:
+      id: ly7uh7q7ou7hj
+  ownershipInfo:
+    type: object
+    x-stoplight:
+      id: juo16c83h8o70
+  paymentFee:
+    type: string
+    x-stoplight:
+      id: itqrxrxrhs9ix
+  phone:
+    type: string
+    x-stoplight:
+      id: uynebxlduz8ko
+  postalCode:
+    type: string
+    x-stoplight:
+      id: ig6pekxmkj6wo
+  requestedDocs:
+    type: object
+    x-stoplight:
+      id: t99m1k5yf2usc
+  state:
+    type: string
+    x-stoplight:
+      id: 5mukyjhaelrm3
+  taxId:
+    type: string
+    x-stoplight:
+      id: udxl5en0iu10y
+  version:
+    type: number
+    x-stoplight:
+      id: 9v381j8y4ktkg
+  vipStatus:
+    type: string
+    x-stoplight:
+      id: r2hejakfpzanm

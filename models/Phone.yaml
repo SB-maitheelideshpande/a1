@@ -1,0 +1,65 @@
+allOf:
+  - type: object
+    properties:
+      id:
+        type: string
+        format: uuid
+        description: Phone identifier
+        readOnly: true
+        x-stoplight:
+          id: jneevylzwopoz
+      value:
+        type: string
+        description: Phone number in E.164 format
+        pattern: '/^\+[1-9]\d{1,14}$/'
+        maxLength: 14
+        x-stoplight:
+          id: ia9uz09go28ls
+      type:
+        type: string
+        description: A label indicating the phone's type
+        enum:
+          - work
+          - home
+          - mobile
+          - fax
+          - pager
+          - other
+        x-stoplight:
+          id: mqdimehazyoqg
+      isPrimary:
+        type: boolean
+        description: Indicates if this is the preferred phone number or primary phone number
+        default: true
+        x-stoplight:
+          id: asijix1mfun7a
+      verificationDate:
+        type: string
+        format: date-time
+        description: The date this phone number was verified
+        readOnly: true
+        x-stoplight:
+          id: l5hooboqd11fa
+      verificationMethod:
+        type: string
+        description: The method used to verify this phone number
+        readOnly: true
+        x-stoplight:
+          id: peyacrf45uuhj
+      active:
+        type: boolean
+        description: A value indicating if the phone is enabled in the system
+        x-stoplight:
+          id: n5ve4q8w09jwc
+    required:
+      - id
+      - value
+    x-stoplight:
+      id: gy951wj4j7k46
+  - $ref: ./CoreModel.yaml
+    x-stoplight:
+      id: hdsgb2h1ixnho
+x-stoplight:
+  id: 8v2e84zxrix5d
+title: Phone
+description: Represents a phone

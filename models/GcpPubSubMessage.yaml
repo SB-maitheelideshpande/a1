@@ -1,0 +1,63 @@
+title: GcpPubSubMessage
+x-stoplight:
+  id: 5xgd0m2wu05xj
+type: object
+x-internal: true
+description: Represents a wrapped gcp pub/sub message
+required:
+  - message
+  - subscription
+properties:
+  message:
+    type: object
+    x-stoplight:
+      id: 1k11478zm9q9u
+    properties:
+      data:
+        type: string
+        x-stoplight:
+          id: 62g78iqs1ab4w
+        description: 'A base64-encoded string message data field. If this field is empty, the message must contain at least one attribute.'
+      attributes:
+        type: object
+        x-stoplight:
+          id: pi3fu2nrkpjkx
+        description: 'Attributes for this message. If this field is empty, the message must contain non-empty data. This can be used to filter messages on the subscription.'
+        additionalProperties:
+          type: string
+          x-stoplight:
+            id: di32ed7wevjm1
+      message_id:
+        type: string
+        x-stoplight:
+          id: zdeo8cqz8lwk9
+        description: 'ID of this message, assigned by the server when the message is published. Guaranteed to be unique within the topic. This value may be read by a subscriber that receives a PubsubMessage via a subscriptions.pull call or a push delivery. It must not be populated by the publisher in a topics.publish call.'
+      publish_time:
+        type: string
+        x-stoplight:
+          id: 3s7do9ohzn02q
+        format: date-time
+        description: 'The time at which the message was published, populated by the server when it receives the topics.publish call. It must not be populated by the publisher in a topics.publish call.'
+      orderingKey:
+        type: string
+        x-stoplight:
+          id: eetzufkkld9bk
+      messageId:
+        type: string
+        x-stoplight:
+          id: h0r4cyz6p0oc7
+      publishTime:
+        type: string
+        x-stoplight:
+          id: vudfw5is0vb36
+        format: date-time
+  subscription:
+    type: string
+    x-stoplight:
+      id: f6qhhtibrgg6h
+    maxLength: 1024
+    description: 'If non-empty, identifies related messages for which publish order should be respected. If a Subscription has enableMessageOrdering set to true, messages published with the same non-empty orderingKey value will be delivered to subscribers in the order in which they are received by the Pub/Sub system. All PubsubMessages published in a given PublishRequest must specify the same orderingKey value. For more information, see https://cloud.google.com/pubsub/docs/ordering.'
+  deliveryAttempt:
+    type: number
+    x-stoplight:
+      id: 6j67o8hx9nr6s
